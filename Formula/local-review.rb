@@ -1,26 +1,26 @@
 class LocalReview < Formula
   desc "Local, BYOK AI code reviewer with multi-LLM support (no SaaS, no telemetry)"
   homepage "https://github.com/mshykov/local-review"
-  version "0.17.3"
+  version "0.17.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mshykov/local-review/releases/download/v#{version}/local-review_darwin_arm64.tar.gz"
-      sha256 "dde5bee95b60aab648a2309930e02cf82a7f415b880fc9a8f28752e42b0f521f"
+      sha256 "9e653ed5d4d984bdd8396fafddf85ba13b8e664259a1d6a4aaf7643a4c0e1fe2"
     else
       url "https://github.com/mshykov/local-review/releases/download/v#{version}/local-review_darwin_amd64.tar.gz"
-      sha256 "3c40a4fb4f0f12ea297d5fbfe9a48cd8443902059058e8be1093d951b762d950"
+      sha256 "f0b4605b8dc44473c18912e698c5501e658976b91de812b5e8cd015d18ba7da4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mshykov/local-review/releases/download/v#{version}/local-review_linux_arm64.tar.gz"
-      sha256 "c3f24c20b397f46d9e272402f2b4f85d691e7d407111c382bc1a52a96d49272d"
+      sha256 "c2133af672d56912cd7f182de4c54559c090c1c5c95b9129242c389b323c904f"
     else
       url "https://github.com/mshykov/local-review/releases/download/v#{version}/local-review_linux_amd64.tar.gz"
-      sha256 "e1ec04d3dc1d2d4bfe213c721cc6a4f9643538be76892054b3db7516996524cf"
+      sha256 "3c356ea745c258a144db23eb054588d46f305bacb18a351526b052c9a507cb97"
     end
   end
 
