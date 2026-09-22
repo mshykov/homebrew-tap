@@ -14,6 +14,10 @@ cask "image-shrink" do
 
   depends_on macos: :ventura
 
+  # The app ships Sparkle and updates itself, so brew should not fight it over the same bundle:
+  # `brew upgrade` leaves it alone, and `--greedy` is there for anyone who wants brew to win.
+  auto_updates true
+
   app "Image Shrink.app"
 
   # The app installs its own Finder Quick Actions on first launch, so open it once.
