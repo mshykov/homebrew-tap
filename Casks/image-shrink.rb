@@ -12,7 +12,7 @@ cask "image-shrink" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Image Shrink.app"
 
