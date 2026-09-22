@@ -1,6 +1,6 @@
 cask "image-shrink" do
-  version "1.0.0"
-  sha256 "da89fe5e9ba1061e07f6ce3b9fcada7b54c474c06e8ec8e32ece8fd04354e92e"
+  version "1.1.0"
+  sha256 "dba1a35533ed0df1387ee50a5f90c248b6912f24af36d9091aa661c5c5c985c6"
 
   url "https://github.com/mshykov/image-shrink/releases/download/v#{version}/ImageShrink-#{version}.dmg"
   name "Image Shrink"
